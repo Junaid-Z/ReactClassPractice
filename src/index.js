@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { Counter } from './App';
+import './App.css';
+import DynamicList from './MyProjects/DynamicList';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Counter />
+	<div>
+		<DynamicList />
+	</div>
 );
 
 // If you want to start measuring performance in your app, pass a function

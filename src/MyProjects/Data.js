@@ -59,7 +59,7 @@ const mobiles = [
         brand: "oppo",
         price: 25000,
     }
-]
+];
 export {
-    mobiles
+    mobiles,
 }
