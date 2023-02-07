@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './App.css';
-import DynamicList from './MyProjects/DynamicList';
 import reportWebVitals from './reportWebVitals';
-
+import MyRouter from './router/router';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<div>
-		<DynamicList />
+		<MyRouter />
 	</div>
 );
 

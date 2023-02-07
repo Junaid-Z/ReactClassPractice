@@ -1,20 +1,17 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cards from "../MyProjects/Cards";
 import List from "../MyProjects/List"
 import { Counter } from "../MyProjects/Counter";
 function myRouter() {
 	return (
-		<Route>
-			<Routes location={"/"}>
-				<Counter />
+		<BrowserRouter>
+			<Routes>
+				<Route exact path={"/"} element={<Counter />} />
+				<Route path={"list"} element={<List />} />
+				<Route path={"cards"} element={<Cards />} />
+				<Route path={"*"} element={<h1>No Such Page</h1>} />
 			</Routes>
-			<Routes location={"list"}>
-				<List />
-			</Routes>
-			<Routes location={"*"}>
-				<Cards />
-			</Routes>
-		</Route>
+		</BrowserRouter>
 	);
 }
 export default myRouter;
