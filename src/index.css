@@ -68,3 +68,10 @@ input {
 	margin-bottom: 100px;
 	overflow: auto;
 }
+
+.link {
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+	margin: 0px 0px 20px 0px;
+}

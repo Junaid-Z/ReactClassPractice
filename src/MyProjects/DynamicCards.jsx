@@ -24,8 +24,8 @@ function DynamicCards() {
 					<div>Price: {mobiles[count].price}</div>
 				</div>
 				<div className="myButtons">
-					<button onClick={() => { ChangeCount(-1) }}>Decrement</button>
-					<button onClick={() => { ChangeCount(1) }}>Increment</button>
+					<button onClick={() => { ChangeCount(-1) }}>Previous Card</button>
+					<button onClick={() => { ChangeCount(1) }}>Next Card</button>
 				</div>
 			</header>
 		</div>

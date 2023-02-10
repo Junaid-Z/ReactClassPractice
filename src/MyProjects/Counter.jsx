@@ -1,4 +1,3 @@
-import '../App.css';
 import { useEffect, useState } from 'react';
 function updateAFS(c) {
 	let body = `api_key=webklsjfoi6jge3pgwe0few03&yourText=${c}`

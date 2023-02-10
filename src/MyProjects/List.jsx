@@ -3,7 +3,7 @@ function List() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<ul>
+				<ul className="mobileList">
 					<li><div className='column heading'>Name</div>:<div className='column heading'>Brand</div>:<div className='column heading'>Price</div></li>
 					{mobiles.map((a, i) => {
 						return (
