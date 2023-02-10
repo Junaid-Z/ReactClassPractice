@@ -5,6 +5,7 @@
 }
 
 .questionCard label {
+	cursor: pointer;
 	margin: auto;
 	height: 3rem;
 	display: flex;
