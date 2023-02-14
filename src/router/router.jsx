@@ -8,6 +8,7 @@ import DynamicList from "../MyProjects/DynamicList";
 import DynamicCards from "../MyProjects/DynamicCards";
 import PageList from "../MyProjects/PageList";
 import QuizApp from "../MyProjects/QuizApp";
+import ECommerce from "../MyProjects/ECommerce";
 function myRouter() {
 	return (
 		<BrowserRouter>
@@ -20,6 +21,7 @@ function myRouter() {
 				<Route path={"Cards"} element={<Cards />} />
 				<Route path={"Testing"} element={<Testing />} />
 				<Route path={"QuizApp"} element={<QuizApp />} />
+				<Route path={"ECommerce"} element={<ECommerce />} />
 				<Route path={"*"} element={<ErrorPage />} />
 			</Routes>
 		</BrowserRouter>
