@@ -1,4 +1,8 @@
 function Button(props) {
-	return (<button onClick={() => { props.function() }} >Click Me</button>)
+	return (<button
+		className={props.class}
+		onClick={() => { props.function() }} >
+		{props.text}
+	</button>)
 }
 export default Button;
