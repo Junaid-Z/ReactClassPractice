@@ -1,0 +1,30 @@
+th,
+td {
+	padding: 5px;
+	font-size: 32px;
+	user-select: none;
+	border: 2px solid black;
+}
+
+th:hover,
+td:hover {
+	cursor: pointer;
+	background-color: rgb(240, 240, 240);
+}
+
+th:active,
+td:active {
+	background-color: rgb(216, 216, 216);
+}
+
+table {
+	border-collapse: collapse;
+	margin: auto;
+}
+
+.selectedRow {
+	margin: auto;
+	width: 40px;
+	height: 40px;
+	font-size: 32px;
+}

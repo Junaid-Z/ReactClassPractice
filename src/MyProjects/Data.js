@@ -124,8 +124,17 @@ var cards = [
 	{ title: "Item3", imageLink: "https://mountsinai.on.ca/wellbeing/images/image-placeholder/image", info: "131231311312313" },
 	{ title: "Item4", imageLink: "https://mountsinai.on.ca/wellbeing/images/image-placeholder/image", info: "131231311312313" },
 ]
+var tableData = [
+	{ id: 1, title: "ABC", description: "ABCDEFGHIJKLMNO", price: 123 },
+	{ id: 1, title: "ABC", description: "ABCDEFGHIJKLMNO", price: 123 },
+	{ id: 1, title: "ABC", description: "ABCDEFGHIJKLMNO", price: 123 },
+	{ id: 1, title: "ABC", description: "ABCDEFGHIJKLMNO", price: 123 },
+	{ id: 1, title: "ABC", description: "ABCDEFGHIJKLMNO", price: 123 },
+	{ id: 1, title: "ABC", description: "ABCDEFGHIJKLMNO", price: 123 },
+]
 export {
 	mobiles,
 	questions,
-	cards
+	cards,
+	tableData
 }
