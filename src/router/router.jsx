@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Cards from "../MyProjects/Cards";
 import List from "../MyProjects/List"
 import Counter from "../MyProjects/Counter";
@@ -9,6 +9,7 @@ import DynamicCards from "../MyProjects/DynamicCards";
 import PageList from "../MyProjects/PageList";
 import QuizApp from "../MyProjects/QuizApp";
 import ECommerce from "../MyProjects/ECommerce";
+import DispDataFrmAPI from "../MyProjects/DisplayingDataFromAPI";
 function myRouter() {
 	return (
 		<BrowserRouter>
@@ -22,6 +23,7 @@ function myRouter() {
 				<Route path={"Testing"} element={<Testing />} />
 				<Route path={"QuizApp"} element={<QuizApp />} />
 				<Route path={"ECommerce"} element={<ECommerce />} />
+				<Route path={"API"} element={<DispDataFrmAPI />} />
 				<Route path={"*"} element={<ErrorPage />} />
 			</Routes>
 		</BrowserRouter>

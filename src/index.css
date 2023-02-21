@@ -29,7 +29,7 @@ button:hover {
 	display: flex;
 }
 
-.card {
+.phoneCard {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-around;
@@ -75,4 +75,65 @@ input {
 	text-decoration: none;
 	font-weight: 600;
 	margin: 0px 0px 20px 0px;
+}
+
+.imgHolder {
+	margin: 10px;
+	background-color: rgba(122, 122, 122, 0.336);
+	height: 200px;
+	width: calc(calc(100% / 3) - 20px);
+}
+
+.imgFrmAPI {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.thumbnailFrmAPIHolder {
+	order: -2;
+}
+
+.thumbnailFrmAPIHolder>img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.imgsFrmAPIHolder {
+	order: -1;
+	max-width: 1280px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.imgsFrmAPIHolder>h1 {
+	width: 100%;
+}
+
+.ApiData {
+	font-size: 1.6em;
+	width: 80%;
+	display: flex;
+	text-align: justify;
+}
+
+.ApiData>span {
+	display: block;
+	margin-right: auto;
+}
+
+.Api-App-header {
+	box-sizing: border-box;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+	padding-bottom: 20px;
 }

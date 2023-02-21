@@ -17,7 +17,7 @@ function DynamicCards() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				<div className='card'>
+				<div className='phoneCard'>
 					<div>We are currently on index number {count}</div>
 					<div>Name: {mobiles[count].name}</div>
 					<div>Brand: {mobiles[count].brand}</div>

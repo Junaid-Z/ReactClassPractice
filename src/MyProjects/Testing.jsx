@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Button from "./Components/Button";
-import Input from "./Components/Input";
 import Table from "./Components/Table";
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./Style/testing.css"

@@ -5,7 +5,7 @@ function Cards() {
 			<header className="App-header">
 				{mobiles.map((a, i) => {
 					return (
-						<div className='card' key={i}><div>{a.name}</div><div>{a.brand}</div><div>{a.price}</div></div>
+						<div className='phoneCard' key={i}><div>{a.name}</div><div>{a.brand}</div><div>{a.price}</div></div>
 					);
 				})}
 			</header>
