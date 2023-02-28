@@ -28,3 +28,20 @@ table {
 	height: 40px;
 	font-size: 32px;
 }
+
+.myCardBtn {
+	display: block;
+	margin-top: auto !important;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+}
+
+.singleProduct {
+	padding: 20px;
+	background-color: rgba(175, 175, 175, 0.582);
+	width: 640px;
+	margin: auto;
+}

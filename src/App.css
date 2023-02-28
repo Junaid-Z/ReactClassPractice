@@ -56,3 +56,14 @@ li {
 	font-weight: 600;
 	font-size: 1.4em;
 }
+
+.post {
+	max-width: 200px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.post img {
+	width: 200px;
+	height: auto;
+}

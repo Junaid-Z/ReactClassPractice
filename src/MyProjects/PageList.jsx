@@ -29,6 +29,12 @@ function PageList() {
 					<li>
 						<Link to={"API"} className="link">Data From API</Link>
 					</li>
+					<li>
+						<Link to={"API2"} className="link">Data From API 2</Link>
+					</li>
+					<li>
+						<Link to={"ECommerceAPI"} className="link">ECommerceFrmAPI</Link>
+					</li>
 
 					<li>
 						<Link to={"Testing"} className="link">Testing</Link>

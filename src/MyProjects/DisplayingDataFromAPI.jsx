@@ -6,19 +6,16 @@ function DispDataFrmAPI() {
 	let [data, setData] = useState("");
 	let [id, setId] = useState(1);
 	function postData() {
+		//first paramaeter is url to hit on second is body and third are the headers
 		axios.post(`https://jsonplaceholder.typicode.com/posts`, {
-			headers: {
-				'Content-type': 'application/json; charset=UTF-8',
-			},
-			body: JSON.stringify({
-				id: 1,
-				title: 'foo',
-				body: 'bar',
-				userId: 1
-			}),
-		}).then((response) => {
-			console.log(response);
-		})
+			id: 1,
+			title: 'foo',
+			body: 'bar',
+			userId: 1
+		}, { headers: { a: 123 } })
+			.then((response) => {
+				console.log(response);
+			})
 	}
 	function getData() {
 		axios.get(`https://dummyjson.com/products/${id}`)
