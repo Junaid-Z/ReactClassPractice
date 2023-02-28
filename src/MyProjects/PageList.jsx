@@ -30,7 +30,7 @@ function PageList() {
 						<Link to={"API"} className="link">Data From API</Link>
 					</li>
 					<li>
-						<Link to={"API2"} className="link">Data From API 2</Link>
+						<Link to={"API2"} className="link">API Practice</Link>
 					</li>
 					<li>
 						<Link to={"ECommerceAPI"} className="link">ECommerceFrmAPI</Link>

@@ -6,14 +6,12 @@ td {
 	border: 2px solid black;
 }
 
-th:hover,
-td:hover {
+tr:hover {
 	cursor: pointer;
 	background-color: rgb(240, 240, 240);
 }
 
-th:active,
-td:active {
+tr:active {
 	background-color: rgb(216, 216, 216);
 }
 
@@ -44,4 +42,11 @@ table {
 	background-color: rgba(175, 175, 175, 0.582);
 	width: 640px;
 	margin: auto;
+}
+
+.loadingCircle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0px;
 }
