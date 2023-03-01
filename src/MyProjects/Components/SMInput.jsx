@@ -1,8 +1,8 @@
 import { TextField } from "@mui/material";
 function SMInput(props) {
-	let { value, setValue } = props;
+	let { value, setValue, placeholder, type, label } = props;
 	return (
-		<TextField id="standard-basic" label="Standard" variant="standard" value={value} onChange={(e) => { props.setValue(e.target.value) }} />
+		<TextField type={type} placeholder={placeholder} id="standard-basic" label={label ? label : 'Standard'} variant="standard" value={value} onChange={(e) => { setValue(e.target.value) }} />
 	)
 }
 export default SMInput;

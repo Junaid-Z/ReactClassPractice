@@ -17,7 +17,7 @@ export default function APIPractice() {
 					<SMTable
 						style={{ width: '100%' }}
 						data={data} cols={[{ displayName: "ID", key: 'id' }, { displayName: "Title", key: 'title' }]}
-						limit={5}
+						limit={100}
 					/>
 					{
 						data.map((v, i) => {

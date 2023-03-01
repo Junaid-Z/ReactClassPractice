@@ -50,3 +50,15 @@ table {
 	align-items: center;
 	padding: 20px 0px;
 }
+
+.tableFilter {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.filterDropdown {
+	display: block;
+	width: 20%;
+	height: 2em;
+}
