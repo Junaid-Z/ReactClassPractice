@@ -132,9 +132,64 @@ var tableData = [
 	{ id: 1, title: "ABC", description: "ABCDEFGHIJKLMNO", price: 123 },
 	{ id: 1, title: "ABC", description: "ABCDEFGHIJKLMNO", price: 123 },
 ]
+let pagesList = [
+	{
+		title: "CounterApp",
+		url: "counter"
+	},
+	{
+		title: "Cards",
+		url: "cards"
+	},
+	{
+		title: "Dynamic Cards",
+		url: "dynamicCards"
+	},
+	{
+		title: "List",
+		url: "list"
+	},
+	{
+		title: "Dynamic List",
+		url: "dynamicList"
+	},
+	{
+		title: "Quiz App",
+		url: "quizApp"
+	},
+	{
+		title: "ECommerce",
+		url: "eCommerce"
+	},
+	{
+		title: "Data From API",
+		url: "API"
+	},
+	{
+		title: "API Practice",
+		url: "API2"
+	},
+	{
+		title: "ECommerceFrmAPI",
+		url: "eCommerceAPI"
+	},
+	{
+		title: "Dashboard",
+		url: "/dashboard"
+	},
+	{
+		title: "Testing",
+		url: "testing"
+	},
+	{
+		title: "ErrorPage",
+		url: "*"
+	},
+]
 export {
 	mobiles,
 	questions,
 	cards,
-	tableData
+	tableData,
+	pagesList
 }

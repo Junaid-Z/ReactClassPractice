@@ -13,24 +13,29 @@ import DispDataFrmAPI from "../MyProjects/DisplayingDataFromAPI";
 import APIPractice from "../MyProjects/APIPractice";
 import ECommerceFrmAPI from "../MyProjects/ECommerceFromAPI";
 import SingleProductFrmAPI from "../MyProjects/SingleProductFrmAPI";
+import DashboardTemp from "../MyProjects/DashboardTemp";
+import { pagesList } from "../MyProjects/Data";
 function myRouter() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route exact path={"/"} element={<PageList />} />
-				<Route exact path={"Counter"} element={<Counter />} />
-				<Route path={"List"} element={<List />} />
-				<Route path={"DynamicList"} element={<DynamicList />} />
-				<Route path={"DynamicCards"} element={<DynamicCards />} />
-				<Route path={"Cards"} element={<Cards />} />
-				<Route path={"Testing"} element={<Testing />} />
-				<Route path={"QuizApp"} element={<QuizApp />} />
-				<Route path={"ECommerce"} element={<ECommerce />} />
-				<Route path={"API"} element={<DispDataFrmAPI />} />
-				<Route path={"API2"} element={<APIPractice />} />
-				<Route path={"ECommerceAPI"} element={<ECommerceFrmAPI />} />
-				<Route path={"ECommerceAPI/:id"} element={<SingleProductFrmAPI />} />
-				<Route path={"*"} element={<ErrorPage />} />
+				<Route path={"/"} element={<DashboardTemp links={pagesList} />} >
+					<Route exact path={"/"} element={<PageList />} />
+					<Route exact path={"Counter"} element={<Counter />} />
+					<Route path={"List"} element={<List />} />
+					<Route path={"DynamicList"} element={<DynamicList />} />
+					<Route path={"DynamicCards"} element={<DynamicCards />} />
+					<Route path={"Cards"} element={<Cards />} />
+					<Route path={"Testing"} element={<Testing />} />
+					<Route path={"QuizApp"} element={<QuizApp />} />
+					<Route path={"ECommerce"} element={<ECommerce />} />
+					<Route path={"API"} element={<DispDataFrmAPI />} />
+					<Route path={"API2"} element={<APIPractice />} />
+					<Route path={"DynamicList"} element={<DynamicList />} />
+					<Route path={"ECommerceAPI"} element={<ECommerceFrmAPI />} />
+					<Route path={"ECommerceAPI/:id"} element={<SingleProductFrmAPI />} />
+					<Route path={"*"} element={<ErrorPage />} />
+				</Route>
 			</Routes>
 		</BrowserRouter>
 	);

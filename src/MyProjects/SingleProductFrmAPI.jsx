@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 export default function SingleProductFrmAPI() {
-	let params = useParams();
+	let { id } = useParams();
 	let [card, setCard] = useState({});
 	useEffect(() => {
-		axios.get(`https://jsonplaceholder.typicode.com/photos/${params.id}`)
+		axios.get(`https://jsonplaceholder.typicode.com/photos/${id}`)
 			.then((response) => {
 				setCard(response.data);
 				console.log(response);

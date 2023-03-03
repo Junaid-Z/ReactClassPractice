@@ -11,6 +11,7 @@ function SMTable(props) {
 				if (JSON.stringify(row[col.key]).toLowerCase().indexOf(term.toLowerCase()) !== -1) {
 					accept = true;
 				}
+				return undefined;
 			})
 		}
 		else {
@@ -57,6 +58,7 @@ function SMTable(props) {
 									</tr>
 								)
 							}
+							return undefined;
 						})
 					}
 				</tbody>

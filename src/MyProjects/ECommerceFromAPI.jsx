@@ -28,6 +28,7 @@ function ECommerceFrmAPI(props) {
 								if (i < limit) {
 									return <SMCard key={i} data={{ title: v.id, info: v.title, imageLink: v.thumbnailUrl }} />;
 								}
+								return undefined;
 							})
 						}
 					</div>
