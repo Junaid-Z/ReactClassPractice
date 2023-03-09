@@ -175,7 +175,7 @@ let pagesList = [
 	},
 	{
 		title: "Dashboard",
-		url: "/dashboard"
+		url: "/"
 	},
 	{
 		title: "Testing",
