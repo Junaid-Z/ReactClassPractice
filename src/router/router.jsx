@@ -14,7 +14,8 @@ import APIPractice from "../MyProjects/APIPractice";
 import ECommerceFrmAPI from "../MyProjects/ECommerceFromAPI";
 import SingleProductFrmAPI from "../MyProjects/SingleProductFrmAPI";
 import DashboardTemp from "../MyProjects/DashboardTemp";
-import { pagesList } from "../MyProjects/Data";
+import { pagesList } from "../MyProjects/Data/Data";
+import LoginPage from "../MyProjects/loginPage";
 function myRouter() {
 	return (
 		<BrowserRouter>
@@ -34,6 +35,7 @@ function myRouter() {
 					<Route path={"DynamicList"} element={<DynamicList />} />
 					<Route path={"ECommerceAPI"} element={<ECommerceFrmAPI />} />
 					<Route path={"ECommerceAPI/:id"} element={<SingleProductFrmAPI />} />
+					<Route path={"login"} element={<LoginPage />} />
 					<Route path={"*"} element={<ErrorPage />} />
 				</Route>
 			</Routes>

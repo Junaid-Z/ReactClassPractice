@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { mobiles } from "./Data";
+import { mobiles } from "./Data/Data";
 function DynamicCards() {
 	let [count, setCount] = useState(0);
 	function ChangeCount(v) {

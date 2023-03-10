@@ -178,6 +178,10 @@ let pagesList = [
 		url: "/"
 	},
 	{
+		title: "Login",
+		url: "login"
+	},
+	{
 		title: "Testing",
 		url: "testing"
 	},

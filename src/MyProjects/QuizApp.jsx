@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { questions } from "./Data";
+import { questions } from "./Data/Data";
 import "./Style/QuizApp.css"
 function QuizApp() {
 	let [count, setCount] = useState(0);

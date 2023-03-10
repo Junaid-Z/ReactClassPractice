@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "./Style/testing.css"
 import "./Style/Components.css"
 import SMButton from "./Components/SMButton";
-import { tableData } from "./Data";
+import { tableData } from "./Data/Data";
 import SMInput from "./Components/SMInput";
 import axios from "axios";
 function Testing() {

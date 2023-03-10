@@ -1,4 +1,4 @@
-import { mobiles } from "./Data";
+import { mobiles } from "./Data/Data";
 function List() {
 	return (
 		<div className="App">
