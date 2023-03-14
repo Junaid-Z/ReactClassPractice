@@ -1,6 +1,8 @@
 import './Style/login.css'
 import { signUp, signIn } from './Functions/firebaseFunctions';
 import { useState } from 'react';
+import { get, getDatabase, ref, set } from 'firebase/database';
+const db = getDatabase();
 function LoginPage() {
 	let [creds, setCreds] = useState({});
 	let [signupLoading, setSignupLoading] = useState(false);
@@ -25,7 +27,11 @@ function LoginPage() {
 									signIn(creds)
 										.then((res) => {
 											console.log(res.user.uid);
+											set(ref(db, 'users/' + res.user.uid), {
+												id: res.user.uid
+											})
 											setLoginLoading(false)
+											get(ref(db, 'users/')).then((data) => { console.log(data.val()) })
 										})
 										.catch((err) => {
 											console.log(err);
@@ -43,6 +49,9 @@ function LoginPage() {
 									signUp(creds)
 										.then((res) => {
 											console.log(res.user.uid);
+											set(ref(db, 'users/' + res.user.uid), {
+												id: res.user.uid
+											})
 											setSignupLoading(false)
 										})
 										.catch((err) => {
