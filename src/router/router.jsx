@@ -16,6 +16,7 @@ import SingleProductFrmAPI from "../MyProjects/SingleProductFrmAPI";
 import DashboardTemp from "../MyProjects/DashboardTemp";
 import { pagesList } from "../MyProjects/Data/Data";
 import LoginPage from "../MyProjects/loginPage";
+import TodoApp from "../MyProjects/Todo";
 function myRouter() {
 	return (
 		<BrowserRouter>
@@ -36,6 +37,7 @@ function myRouter() {
 					<Route path={"ECommerceAPI"} element={<ECommerceFrmAPI />} />
 					<Route path={"ECommerceAPI/:id"} element={<SingleProductFrmAPI />} />
 					<Route path={"login"} element={<LoginPage />} />
+					<Route path={"todoApp"} element={<TodoApp />} />
 					<Route path={"*"} element={<ErrorPage />} />
 				</Route>
 			</Routes>

@@ -182,6 +182,10 @@ let pagesList = [
 		url: "login"
 	},
 	{
+		title: "TODO App",
+		url: "todoapp"
+	},
+	{
 		title: "Testing",
 		url: "testing"
 	},

@@ -1,0 +1,102 @@
+.todoApp .App-header {
+    padding-top: 50px;
+}
+
+.todoApp .card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(211, 211, 211, 0.3);
+    font-size: 2rem;
+    font-weight: 600;
+    width: 600px;
+    height: 400px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+}
+
+.todoApp .todoList {
+    border-radius: 15px;
+    background-color: rgba(236, 236, 236, 0.4);
+    height: 400px;
+    overflow: auto;
+}
+
+.todoApp .todoItem {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+    background-color: rgba(255, 255, 255, 0.068);
+    height: 60px;
+}
+
+.todoApp .todoOptions {
+    display: flex;
+    margin: 0px 20px 0px auto;
+}
+
+.todoApp .buttonHolder {
+    margin-top: 20px;
+}
+
+.todoApp button {
+    margin-left: 10px;
+    font-size: inherit;
+    font-family: inherit;
+    border-radius: 8px;
+}
+
+.todoApp input {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.todoApp .todoText {
+    display: flex;
+    justify-content: flex-start;
+    width: 30vw;
+    overflow: hidden;
+}
+
+
+
+@media only screen and (max-width:700px) {
+    .todoApp .todoList {
+        min-width: 100vw;
+    }
+
+    .todoApp .todoText {
+        margin-left: 5px;
+    }
+
+    .todoApp input.todoText {
+        width: 30vw;
+    }
+
+    .todoApp .buttonHolder {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .todoApp button {
+        margin-top: 10px;
+        display: block;
+        width: 150px;
+    }
+}
+
+@media only screen and (min-width:700px) {
+    .todoApp .todoList {
+        min-width: 45vw;
+    }
+
+    .todoApp .todoText {
+        margin-left: 20px;
+    }
+
+    .todoApp input.todoText {
+        width: 20vw;
+    }
+}
